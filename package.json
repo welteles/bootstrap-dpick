@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-dpick",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "description": "A customizable date range picker built with Bootstrap 5",
   "main": "dist/js/bootstrap-dpick.js",
   "module": "dist/js/bootstrap-dpick.js",
