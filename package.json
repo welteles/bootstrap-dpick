@@ -1,0 +1,42 @@
+{
+  "name": "bootstrap-dpick",
+  "version": "1.0.0",
+  "description": "A customizable date range picker built with Bootstrap 5",
+  "main": "dist/js/bootstrap-dpick.js",
+  "module": "dist/js/bootstrap-dpick.js",
+  "types": "dist/js/bootstrap-dpick.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/welteles/bootstrap-dpick.git"
+  },
+  "scripts": {
+    "build:scss": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
+    "build:ts": "tsc --outDir dist/js",
+    "build": "npm run build:scss && npm run build:ts"
+  },
+  "keywords": [
+    "bootstrap",
+    "datepicker",
+    "date-range",
+    "javascript",
+    "typescript",
+    "calendar"
+  ],
+  "author": {
+    "name": "Wetero Service LLC",
+    "email": "wel.rocha.usa@gmail.com",
+    "url": "https://weteroservice.com"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/welteles/bootstrap-dpick#readme",
+  "bugs": {
+    "url": "https://github.com/welteles/bootstrap-dpick/issues"
+  },
+  "dependencies": {
+    "bootstrap": "5.x.x"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.4",
+    "sass": "^1.82.0"
+  }
+}

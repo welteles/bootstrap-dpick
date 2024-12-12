@@ -1,0 +1,67 @@
+@import 'bootstrap/scss/bootstrap';
+
+$font-size-title: 18px;
+$font-size-actions: 12px;
+$font-size-day: 14px;
+$transition-speed: 0.3s ease;
+
+@mixin afterLine($color) {
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 1px;
+    background-color: $color;
+    width: 0;
+    transition: all $transition-speed;
+  }
+}
+
+.dpick {
+  width: 300px;
+
+  .dpick-header {
+    .dpick-header-title { font-size: $font-size-title; }
+    .dpick-header-actions { font-size: $font-size-actions;
+      div {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .dpick-body {
+    .dpick-day-description, .dpick-day {
+      width: 100%;
+      text-align: center;
+      font-size: $font-size-actions; // Default for description
+    }
+
+    .dpick-day {
+      font-size: $font-size-day;
+      cursor: pointer;
+      border: 1px solid transparent;
+
+      &.dpick-day-start { border-color: $primary; }
+      &.dpick-day-end { border-color: $secondary; }
+    }
+  }
+
+  .dpick-footer-actions {
+    .dpick-footer-actions-title,
+    .dpick-footer-actions-date { font-size: $font-size-day; }
+
+    .dpick-footer-actions-start,
+    .dpick-footer-actions-end {
+      position: relative;
+      cursor: pointer;
+
+      @include afterLine($primary); // Default color
+
+      &.dpick-footer-actions-end { @include afterLine($secondary); }
+
+      &.selected, &:hover { &::after { width: 100%; } }
+    }
+  }
+}

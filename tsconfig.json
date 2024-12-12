@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es2017",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution":"node",
+  },
+  "include": ["ts/*.ts"]
+}
