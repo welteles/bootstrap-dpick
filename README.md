@@ -65,14 +65,14 @@ datepicker.onEndDateChange((event) => {
 To customize the styles, import the SCSS file into your project:
 
 ```scss
-@import '~bootstrap-dpick/src/scss/main.scss';
+@import '~bootstrap-dpick/scss/bootstrap-dpick';
 ```
 
 This allows you to override the default styles by modifying variables or adding custom rules in your SCSS.
 
 Example:
 ```scss
-@import '~bootstrap-dpick/src/scss/main.scss';
+@import '~bootstrap-dpick/scss/bootstrap-dpick';
 
 .dpick-container {
   .dpick-day {
@@ -173,4 +173,3 @@ Bootstrap-DPick is developed and maintained by **Wetero Service LLC**.
 This project is licensed under the ISC License.
 
 ---
-# welteles-bootstrap-dpick
