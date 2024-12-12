@@ -173,3 +173,4 @@ Bootstrap-DPick is developed and maintained by **Wetero Service LLC**.
 This project is licensed under the ISC License.
 
 ---
+# welteles-bootstrap-dpick
